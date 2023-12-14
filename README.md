@@ -39,4 +39,4 @@ El proyecto puede ejecutarse en el entorno local con Docker Compose. Para eso:
 ![image](https://github.com/sjardon/prex/assets/71879650/a60d7fe6-7c7a-44cd-82c7-e6b07dbe7999)
 
 ## Postman Collection:
-Agregar el siguiente link al workspace de Postman: https://api.postman.com/collections/12192016-a0ee4471-034d-4bcd-b3cd-bab9f9374737?access_key=PMAT-01HHM5160Q8G956FGAN0HVCYK0
+Pueden ver la coleccion en el siguiente link: https://www.postman.com/sjardon/workspace/prex-challenge/collection/12192016-a0ee4471-034d-4bcd-b3cd-bab9f9374737
