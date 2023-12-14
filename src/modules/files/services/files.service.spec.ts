@@ -2,7 +2,7 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { FilesService } from './files.service';
 import { FileEntity } from '../entities/file.entity';
 import { getRepositoryToken } from '@nestjs/typeorm';
-import { RemoveOptions, Repository, SaveOptions } from 'typeorm';
+import { Repository } from 'typeorm';
 import {
   CLOUD_STORAGE_SERVICE,
   ICloudStorageService,
