@@ -26,3 +26,17 @@ El proyecto puede ejecutarse en el entorno local con Docker Compose. Para eso:
 3. `docker compose up db`
 4. `npm install`
 5. `npm run test`
+
+## Decisiones tomadas:
+1. Autenticación: Se eligió la autenticación por medio de Bearer Token, implementado por medio de Passport en NestJs debido a la seguridad y facilidad que brindan.
+2. Para validar el usuario en cada endpoint se utilizaron decoradores que encapsulan la implenetación del resto del proceso de ruteo.
+3. Para el manejo de los archivos en S3 se implementó un adaptador, que nos permite abstraer el servicio de cloud que estamos utilizando por detras.
+4. El nivel de acceso a los archivos se desarrolló en un servicio separado del manejo de archivos en sí. Por un lado, se concidera un componente diferente por su entidad propia, por el otro, nos permite encapsular la lógica de compartir archivos con mayor flexibilidad.
+
+## Diagrama de Arquitectura: (WIP)
+
+## Diagrama de Entidad-Relación:
+![image](https://github.com/sjardon/prex/assets/71879650/a60d7fe6-7c7a-44cd-82c7-e6b07dbe7999)
+
+## Postman Collection:
+Agregar el siguiente link al workspace de Postman: https://api.postman.com/collections/12192016-a0ee4471-034d-4bcd-b3cd-bab9f9374737?access_key=PMAT-01HHM5160Q8G956FGAN0HVCYK0
