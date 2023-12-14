@@ -33,7 +33,8 @@ El proyecto puede ejecutarse en el entorno local con Docker Compose. Para eso:
 3. Para el manejo de los archivos en S3 se implementó un adaptador, que nos permite abstraer el servicio de cloud que estamos utilizando por detras.
 4. El nivel de acceso a los archivos se desarrolló en un servicio separado del manejo de archivos en sí. Por un lado, se concidera un componente diferente por su entidad propia, por el otro, nos permite encapsular la lógica de compartir archivos con mayor flexibilidad.
 
-## Diagrama de Arquitectura: (WIP)
+## Diagrama de Arquitectura:
+![image](https://github.com/sjardon/prex/assets/71879650/6ea1bdcc-a751-44eb-873a-998d00201812)
 
 ## Diagrama de Entidad-Relación:
 ![image](https://github.com/sjardon/prex/assets/71879650/a60d7fe6-7c7a-44cd-82c7-e6b07dbe7999)
