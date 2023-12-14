@@ -1,0 +1,33 @@
+import {
+  Injectable,
+  CanActivate,
+  ExecutionContext,
+  Inject,
+} from '@nestjs/common';
+import { DataSource } from 'typeorm';
+import { FileAccessEntity } from '../entities/file-access.entity';
+import { FileAccessType } from '../constants/file-access-type.enum';
+
+@Injectable()
+export class HasOwnerAccessGuard implements CanActivate {
+  constructor(@Inject(DataSource) private readonly dataSource: DataSource) {}
+
+  async canActivate(context: ExecutionContext): Promise<boolean> {
+    const { params, user } = context.switchToHttp().getRequest();
+    const { fileId } = params;
+
+    if (!fileId || !user.id) {
+      return false;
+    }
+
+    const fileAccess = await this.dataSource
+      .getRepository(FileAccessEntity)
+      .findOneBy({ userId: user.id, fileId, type: FileAccessType.OWNER });
+
+    if (fileAccess) {
+      return true;
+    }
+
+    return false;
+  }
+}
