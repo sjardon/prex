@@ -1,6 +1,6 @@
-# Conexa challenge
+# Prex challenge
 
-Repositorio para el ejercicio de Conexa. Espero que disfruten la revisión!
+Repositorio para el ejercicio de Prex. Espero que disfruten la revisión!
 
 ## Introducción
 
