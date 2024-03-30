@@ -1,6 +1,4 @@
-# Prex challenge
-
-Repositorio para el ejercicio de Prex. Espero que disfruten la revisión!
+# Ejercicio de file sharing
 
 ## Introducción
 
